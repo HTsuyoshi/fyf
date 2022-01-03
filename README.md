@@ -1,9 +1,9 @@
 # trolling
 
-#### FUCKER
+#### [FUCKER](./fucker)
 
 Programs to mess with your friends
 
-#### UNFUCKER
+#### [UNFUCKER](./fucker)
 
 Programs to fix your mess
