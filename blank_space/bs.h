@@ -1,4 +1,4 @@
-std::string BLANK_SPACE("\u200c");
+const std::string BLANK_SPACE("\u200c");
 
 void usage(std::string name)
 {
