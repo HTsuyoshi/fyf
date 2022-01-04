@@ -1,9 +1,9 @@
 # trolling
 
-#### [FUCKER](./fucker)
+For each `FUCKER` program it will exist a `UNFUCKER` program.
 
-Programs to mess with your friends
+A little summary for the programs:
 
-#### [UNFUCKER](./fucker)
-
-Programs to fix your mess
+* [`blank_space`](./blank_space): Hides a `U+200C` character in some code
+    * Programs that can detect:
+        * neovim
