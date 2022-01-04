@@ -1,11 +1,12 @@
-CC=g++
+CC = g++
+DEPS = bs.h
 
 all:
-	make fucker/fucker
-	make unfucker/unfucker
+	make fucker
+	make unfucker
 
-fucker/fucker: fucker/main.cpp
+fucker: ./bs_f.cpp
 	$(CC) $^ -g -o $@
 
-unfucker/unfucker: unfucker/main.cpp
+unfucker: ./bs_unf.cpp
 	$(CC) $^ -g -o $@

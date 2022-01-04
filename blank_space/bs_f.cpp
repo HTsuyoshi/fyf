@@ -1,32 +1,25 @@
 #include <iostream>
 #include <fstream>
 
-std::string BLANK_SPACE("\u200c");
-
-std::string new_name(char old_name[])
-{
-    std::string name("fucked_");
-    name.append(old_name);
-    return name;
-}
+#include "bs.h"
 
 int main(int argc, char* argv[])
 {
-    if (argc != 2) {
-        std::cout << "Usage:\n";
-        std::cout << "\t./fucker arquivo" << std::endl;
+    std::ifstream code(argv[1]);
+
+    if (argc != 2)
+    {
+        usage("fucker");
         return EXIT_FAILURE;
     }
-
-    std::ifstream code(argv[1]);
 
     if (!code.is_open())
     {
-        std::cerr << "coudln't open the file:" << argv[1] << std::endl;
+        err_open(argv[1]);
         return EXIT_FAILURE;
     }
 
-    std::ofstream fucked_code(new_name(argv[1]));
+    std::ofstream fucked_code(new_name(argv[1], "fucked_"));
 
     char character;
     while (code.get(character))

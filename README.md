@@ -1,6 +1,8 @@
-# trolling
+# FYF - F... Your Friends
 
-For each `FUCKER` program it will exist a `UNFUCKER` program.
+Some cool programs.
+
+For each `F..CK.R` program it will exist a `UNF..CK.R` program.
 
 A little summary for the programs:
 
